@@ -2,7 +2,7 @@
 <html>
 <head></head>
 <body>
-    <p id="canpooper">dhaskjhasdhashgdkjasgdjas</p>
+    <p id="canpooper"></p>
     <script>
     $.getJSON('https://api.ipify.org?format=jsonp&callback=?', function(data) {
         document.getElementById("canpooper").innerHTML = JSON.stringify(data, null, 2);
