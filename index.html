@@ -2,7 +2,13 @@
 <html>
 <head></head>
 <body>
-    <p>dhaskjhasdhashgdkjasgdjas</p>
+    <p id="canpooper">dhaskjhasdhashgdkjasgdjas</p>
+    <script>
+    $.getJSON('https://api.ipify.org?format=jsonp&callback=?', function(data) {
+        document.getElementById("canpooper").innerHTML = JSON.stringify(data, null, 2);
+    });
+    </script>
     
-    </body>
+    
+</body>
 </html>
