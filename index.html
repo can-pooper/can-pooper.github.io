@@ -2,14 +2,13 @@
 <html>
 <head></head>
 <body>
-    <p id="canpooper"></p>
-    <script>
-    $("canpooper").getJSON('https://api.ipify.org?format=jsonp&callback=?', function(data) {
-        console.log(JSON.stringify(data, null, 2));
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+
+    $.getJSON('https://api.ipify.org?format=jsonp&callback=?', function(data) {
+      console.log(JSON.stringify(data, null, 2));
     });
-    
-    </script>
-    
-    
+
+</script>
+
 </body>
 </html>
