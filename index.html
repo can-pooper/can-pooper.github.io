@@ -3,12 +3,18 @@
 <head></head>
 <body>
 <script>
+function onMouseDown(e){
+    if (e.button == 2){
+        document.getElementByID("hello").innerHTML = "bruh";
+    }
+}
 
-    $.getJSON('https://api.ipify.org?format=jsonp&callback=?', function(data) {
-      console.log(JSON.stringify(data, null, 2));
-    });
-
+(function(){
+    canvas.addEventListener("mousedown", onMouseDown);
+})();
+    
+    
 </script>
-
+<p id="hello">hello</p>
 </body>
 </html>
