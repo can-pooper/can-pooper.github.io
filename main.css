@@ -1,5 +1,7 @@
 body {
   background-color: snow;
+  margin: 0;
+  padding: 15;
 }
 
 h1 {
