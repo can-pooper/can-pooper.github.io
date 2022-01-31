@@ -13,6 +13,8 @@
         $("#lol3").html("Town/city: " + data.city);
         $("#lol4").html("Zip/postal: " + data.postal);
         $("#lol6").html("Coordinates: " + data.latitude + ", " + data.longitude);
+        var ballsacks617264 = document.getElementById("bozo");
+        ballsacks617264.remove();
     });
  }
     </script>
@@ -23,7 +25,7 @@
         <h1>Hello!</h1>
         <h3>This is my website.</h3>
         <p>Yes, it is.</p>
-        <button onclick = "h()">And this is a button.</button>
+        <button onclick = "h()" id = "bozo">And this is a button.</button>
         <p id="lol"></p>
         <p id="lol1"></p>
         <p id="lol2"></p>
