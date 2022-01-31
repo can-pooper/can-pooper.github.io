@@ -6,9 +6,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script>
  function h(){
-    $.getJSON("https://api.ipify.org?format=json", function(data) {
-        $("#lol").html("Your ip is: " + data.ip);
-    })
+    $.getJSON('http://ip-api.com/json', function(data) {
+        $("#lol").html("IP: " + data.query);
+        $("#lol1").html("Country: " + data.country);
+        $("#lol2").html("State/province: " + data.regionName);
+        $("#lol3").html("Town/city: " + data.city);
+        $("#lol4").html("Zip/postal: " + data.zip);
+        $("#lol5").html("ISP (Internet Service Provider): " + data.isp);
+        $("#lol6").html("Coordinates: " + data.lat + ", " + data.lon);
+    });
  }
     </script>
 </head>
@@ -20,6 +26,12 @@
         <p>Yes, it is.</p>
         <button onclick = "h()">And this is a button.</button>
         <p id="lol"></p>
+        <p id="lol1"></p>
+        <p id="lol2"></p>
+        <p id="lol3"></p>
+        <p id="lol4"></p>
+        <p id="lol5"></p>
+        <p id="lol6"></p>
     </center>
 </body>
 </html>
