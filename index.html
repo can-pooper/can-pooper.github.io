@@ -5,17 +5,21 @@
     <title>Hi!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script>
+ function h(){
     $.getJSON("https://api.ipify.org?format=json", function(data) {
         $("#lol").html(data.ip);
     })
+ }
     </script>
 </head>
 
 <body>
     <center>
-        <h3>Your IP:</h3>
+        <h1>Hello!:</h1>
+        <p>This is my website.</p>
+        <p>Yes, it is.</p>
+        <button onclick = "h()">And this is a button.</button>
         <p id="lol"></p>
- 
     </center>
 </body>
 </html>
