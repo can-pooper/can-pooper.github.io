@@ -6,7 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script>
  function h(){
-    $.getJSON('http://ip-api.com/json', function(data) {
+    $.getJSON('https://ipapi.co/json/', function(data) {
         $("#lol").html("IP: " + data.ip);
         $("#lol1").html("Country: " + data.country_name);
         $("#lol2").html("State/province: " + data.region);
