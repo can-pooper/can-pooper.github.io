@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head></head>
-<body>
-<script>
-function onMouseDown(e){
-    if (e.button == 2){
-        document.getElementByID("hello").innerHTML = "bruh";
-    }
-}
+ 
+<head>
+    <title>can-pooper</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script>
+    $.getJSON("https://api.ipify.org?format=json", function(data) {
+        $("#lol").html(data.ip);
+    })
+    </script>
+</head>
 
-function init(){
-    canvas.addEventListener("click", onMouseDown);
-}
-init();   
-</script>
-<p id="hello">hello</p>
+<body>
+    <center>
+        <h3>Your IP:</h3>
+        <p id="lol"></p>
+ 
+    </center>
 </body>
 </html>
