@@ -7,13 +7,12 @@
       <script>
  function h(){
     $.getJSON('http://ip-api.com/json', function(data) {
-        $("#lol").html("IP: " + data.query);
-        $("#lol1").html("Country: " + data.country);
-        $("#lol2").html("State/province: " + data.regionName);
+        $("#lol").html("IP: " + data.ip);
+        $("#lol1").html("Country: " + data.country_name);
+        $("#lol2").html("State/province: " + data.region);
         $("#lol3").html("Town/city: " + data.city);
-        $("#lol4").html("Zip/postal: " + data.zip);
-        $("#lol5").html("ISP (Internet Service Provider): " + data.isp);
-        $("#lol6").html("Coordinates: " + data.lat + ", " + data.lon);
+        $("#lol4").html("Zip/postal: " + data.postal);
+        $("#lol6").html("Coordinates: " + data.latitude + ", " + data.longitude);
     });
  }
     </script>
