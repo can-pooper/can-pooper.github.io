@@ -7,7 +7,7 @@
       <script>
  function h(){
     $.getJSON("https://api.ipify.org?format=json", function(data) {
-        $("#lol").html(data.ip);
+        $("#lol").html("Your ip is: " + data.ip);
     })
  }
     </script>
@@ -15,8 +15,8 @@
 
 <body>
     <center>
-        <h1>Hello!:</h1>
-        <p>This is my website.</p>
+        <h1>Hello!</h1>
+        <h3>This is my website.</h3>
         <p>Yes, it is.</p>
         <button onclick = "h()">And this is a button.</button>
         <p id="lol"></p>
