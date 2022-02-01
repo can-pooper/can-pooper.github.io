@@ -18,12 +18,9 @@ p {
 
 button {
   background: DeepPink;
+  border-color: Yellow; 
 }
 
 button:hover {
   background: Ivory;
-}
-
-button:focus {
-  border-color: Yellow;
 }
