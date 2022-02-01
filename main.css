@@ -15,3 +15,11 @@ h2 {
 p {
   font-family: courier-new;
 }
+
+button {
+  background: DeepPink;
+}
+
+button:hover {
+  background: Ivory;
+}
