@@ -23,3 +23,7 @@ button {
 button:hover {
   background: Ivory;
 }
+
+button:focus {
+  background: Black;
+}
