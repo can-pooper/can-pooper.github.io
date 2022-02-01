@@ -32,12 +32,15 @@
         newButton.innerHTML = "Here's a new one";
         var doc = document.getElementsByTagName("body")[0];
         doc.appendChild(newButton)
-        newButton.addEventListener("click", function(){document.body.style.cursor="none";});
-     }
+        newButton.addEventListener("click", function(){
+             document.getElementById("main").style.cursor='none';
+          });
+        }
     </script>
 </head>
 
 <body>
+  <div id = "main">
         <h1>Hello!</h1>
         <h3>This is my website.</h3>
         <p>Yes, it is.</p>
@@ -50,5 +53,6 @@
         <p id="lol5"></p>
         <h3 id="lol6"></h3>
         <p id="lol7"></p>
+   </div>
 </body>
 </html>
