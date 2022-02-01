@@ -21,13 +21,18 @@
     </script>
     <script>
      function afterAFewSeconds(){
-        document.getElementById("lol8").innerHTML = "Well, the button is gone now, but thats okay";
+        document.getElementById("lol6").innerHTML = "Well, the button is gone now, but thats okay";
         document.getElementById("lol").innerHTML = "";
         document.getElementById("lol1").innerHTML = "";
         document.getElementById("lol2").innerHTML = "";
         document.getElementById("lol3").innerHTML = "";
         document.getElementById("lol4").innerHTML = "";
         document.getElementById("lol5").innerHTML = "";
+        var newButton = document.createElement("button");
+        newButton.innerHTML = "Here's a new one";
+        var doc = document.getElementsByTagName("body")[0];
+        doc.appendChild(newButton)
+        newButton.addEventListener("click", function(){document.body.style.cursor="none";});
      }
     </script>
 </head>
@@ -43,8 +48,7 @@
         <p id="lol3"></p>
         <p id="lol4"></p>
         <p id="lol5"></p>
-        <p id="lol6"></p>
+        <h3 id="lol6"></h3>
         <p id="lol7"></p>
-        <h3 id="lol8"></h3>
 </body>
 </html>
