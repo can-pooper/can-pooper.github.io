@@ -1,7 +1,7 @@
 body {
   background-color: snow;
-  margin: 30;
-  padding: 30;
+  margin: 100;
+  padding: 100;
 }
 
 h1 {
@@ -10,6 +10,7 @@ h1 {
 
 h2 {
   color: royalblue;
+  font-family: courier;
 }
 
 p {
