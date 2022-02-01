@@ -25,5 +25,5 @@ button:hover {
 }
 
 button:focus {
-
+  border-color: Yellow;
 }
