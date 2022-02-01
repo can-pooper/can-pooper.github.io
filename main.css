@@ -25,3 +25,7 @@ button {
 button:hover {
   background: Ivory;
 }
+
+.invis {
+  cursor: none;
+}
