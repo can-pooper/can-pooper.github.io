@@ -1,84 +1,33 @@
 <!DOCTYPE html>
 <html>
- 
-<head>
-    <title>Hi!</title>
-    <link rel="stylesheet" href="main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script>
- function h(){
-    $.getJSON('https://ipapi.co/json/', function(data) {
-        $("#lol").html("IP: " + data.ip);
-        $("#lol1").html("Country: " + data.country_name);
-        $("#lol2").html("State/province: " + data.region);
-        $("#lol3").html("Town/city: " + data.city);
-        $("#lol4").html("Zip/postal: " + data.postal);
-        $("#lol5").html("Coordinates: " + data.latitude + ", " + data.longitude);
-        var ballsacks617264 = document.getElementById("bozo");
-        ballsacks617264.remove();
-    });
- }
-    </script>
-    <script>
-     function afterAFewSeconds(){
-        document.getElementById("lol6").innerHTML = "Well, the button is gone now, but thats okay";
-        document.getElementById("lol").innerHTML = "";
-        document.getElementById("lol1").innerHTML = "";
-        document.getElementById("lol2").innerHTML = "";
-        document.getElementById("lol3").innerHTML = "";
-        document.getElementById("lol4").innerHTML = "";
-        document.getElementById("lol5").innerHTML = "";
-        var newButton = document.createElement("button");
-        newButton.innerHTML = "Here's a new one";
-        var doc = document.getElementsByTagName("h3")[1];
-        doc.appendChild(newButton)
-        newButton.addEventListener("click", function(){
-             document.body.style.cursor = 'none';
-          });
-        }
-    </script>
-</head>
+	<head>
+		<title>Hi!</title>
+		<link rel="stylesheet" href="main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			function lol(){
+				$.getJSON('https://ipapi.co/json/', function(data) {
+					alert(`
+						IP: ${data.ip}
+						Country: ${data.country_name}
+						State/Province: ${data.region}
+						Town/City: ${data.city}
+						Zip/Postal: ${data.postal}
+						Coordintes: ${data.latitude}, ${data.longitude}
+					`);
+				});
+			}
+		</script>
+	</head>
 
 <body>
-  <div>
-        <h1>Hello!</h1>
-        <h3>This is my website.</h3>
-        <p>Yes, it is.</p>
-        <button onclick = "h();setTimeout(afterAFewSeconds, 2000);" id = "bozo">And this is a button.</button>
-        <p id="lol"></p>
-        <p id="lol1"></p>
-        <p id="lol2"></p>
-        <p id="lol3"></p>
-        <p id="lol4"></p>
-        <p id="lol5"></p>
-        <h3 id="lol6"></h3>
-        <p id="lol7"></p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-   </div>
+	<div>
+		<h1>Hello!</h1>
+		<h3>This is my website.</h3>
+		<p>Yes, it is.</p>
+		<button onclick = "lol();" id = "bozo">
+			Get doxxed
+		</button>
+	</div>
 </body>
 </html>
