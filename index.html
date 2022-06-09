@@ -7,23 +7,19 @@
 		<script>
 			function lol(){
 				$.getJSON('https://ipapi.co/json/', function(data) {
-					alert(`
-IP: ${data.ip}
-Country: ${data.country_name}
-State/Province: ${data.region}
-Town/City: ${data.city}
-Zip/Postal: ${data.postal}
-Coordinates: ${data.latitude}, ${data.longitude}
-					`);
+   					alert("IP: ${data.ip}\nCountry: ${data.country_name}\nState/Province: ${data.region}\nTown/City: ${data.city}\nZip/Postal: ${data.postal}\nCoordinates: ${data.latitude}, ${data.longitude}");
 				});
 			}
 		</script>
 	</head>
 
 <body>
+	<header>
+		<p>hey</p>
+	</header>
+	
 	<div>
-		<h1>Hello!</h1>
-		<h3>This is my website.</h3>
+		<h1></h1>
 		<p>Yes, it is.</p>
 		<button onclick = "lol();" id = "bozo">
 			Get doxxed
