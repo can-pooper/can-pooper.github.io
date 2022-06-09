@@ -7,7 +7,7 @@
 		<script>
 			function lol(){
 				$.getJSON('https://ipapi.co/json/', function(data) {
-   					alert("IP: ${data.ip}\nCountry: ${data.country_name}\nState/Province: ${data.region}\nTown/City: ${data.city}\nZip/Postal: ${data.postal}\nCoordinates: ${data.latitude}, ${data.longitude}");
+   					alert(`IP: ${data.ip}\nCountry: ${data.country_name}\nState/Province: ${data.region}\nTown/City: ${data.city}\nZip/Postal: ${data.postal}\nCoordinates: ${data.latitude}, ${data.longitude}`);
 				});
 			}
 		</script>
@@ -19,8 +19,8 @@
 	</header>
 	
 	<div>
-		<h1></h1>
-		<p>Yes, it is.</p>
+		<h1>website</h1>
+		<p>made by: an artificial intelligence program</p>
 		<button onclick = "lol();" id = "bozo">
 			Get doxxed
 		</button>
