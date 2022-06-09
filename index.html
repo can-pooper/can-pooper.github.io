@@ -8,12 +8,12 @@
 			function lol(){
 				$.getJSON('https://ipapi.co/json/', function(data) {
 					alert(`
-						IP: ${data.ip}
-						Country: ${data.country_name}
-						State/Province: ${data.region}
-						Town/City: ${data.city}
-						Zip/Postal: ${data.postal}
-						Coordintes: ${data.latitude}, ${data.longitude}
+IP: ${data.ip}
+Country: ${data.country_name}
+State/Province: ${data.region}
+Town/City: ${data.city}
+Zip/Postal: ${data.postal}
+Coordinates: ${data.latitude}, ${data.longitude}
 					`);
 				});
 			}

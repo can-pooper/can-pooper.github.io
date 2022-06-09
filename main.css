@@ -20,6 +20,7 @@ p {
 button {
   background: DeepPink;
   border-color: Yellow; 
+  display: inline;
 }
 
 button:hover {
