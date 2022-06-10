@@ -1,12 +1,5 @@
 body {
   background-color: #333333;
-  margin: 100;
-  padding: 100;
-}
-
-h1 {
-  color: #55FFEE;
-  font-family: 'Fira Code', 'Arial', monospace;
 }
 
 h2 {
@@ -24,11 +17,6 @@ p {
   font-family: 'Fira Code', 'Arial', monospace;
 }
 
-#title {
-  font-size: 40;
-  color: #22CCCC;
-}
-
 button {
   background: #22CCCC;
   border-color: #FFFF00;
@@ -36,16 +24,23 @@ button {
 }
 
 header {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 10;
-  padding: 10px;
-  margin: -12px;
-  border-width: 5px;
+
+  margin: -8px;
+  padding: 1px;
+  padding-left: 15px;
+  padding-right: 0px;
+
   border-color: #FFFF00;
   border-bottom-style: solid;
-  background: #222222;
+  background: #252525;
   width: 100%;
+} header h1 {
+  font-size: 30px;
+  color: #55FFEE;
+  font-family: 'Fira Code', 'Arial', monospace;
 }
 
 button:hover {
