@@ -15,12 +15,13 @@ h2 {
 }
 
 p {
+  color: #DDDDDD;
   font-family: 'Fira Code', 'Arial', monospace;
 }
 
 button {
   background: #22CCCC;
-  border-color: Yellow; 
+  border-color: #FFFF00;
   font-family: 'Fira Code', 'Arial', monospace;
   display: inline;
 }
