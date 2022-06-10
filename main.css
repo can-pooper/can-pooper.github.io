@@ -26,6 +26,14 @@ button {
   display: inline;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 10;
+  padding: 12px;
+  margin: 0px;
+}
+
 button:hover {
   background: Ivory;
 }
