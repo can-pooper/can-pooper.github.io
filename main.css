@@ -2,13 +2,19 @@ body {
   background-color: #333333;
 }
 
+h1 {
+  font-size: 30px;
+  color: #55FFEE;
+  font-family: 'Ubuntu Mono', 'Arial', monospace;
+}
+
 h2 {
-  color: #22DDDD;
+  color: #22FFFF;
   font-family: 'Fira Code', 'Arial', monospace;
 }
 
 h3 {
-  color: #22DDDD;
+  color: #22FFFF;
   font-family: 'Fira Code', 'Arial', monospace;
 }
 
@@ -18,9 +24,19 @@ p {
 }
 
 button {
-  background: #22DDDD;
+  background: #22FFFF;
   border-color: #FFFF00;
   font-family: 'Fira Code', 'Arial', monospace;
+  animation: glow 1s ease-in-out infinite alternate none running;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 15px -5px #22FFFF;
+  }
+  to {
+    box-shadow: 0 0 20px 0px #22FFFF;
+  }
 }
 
 header {
@@ -37,14 +53,24 @@ header {
   border-bottom-style: solid;
   background: #252525;
   width: 100%;
+  box-shadow: 0px 0px 10px 0px #FFFF00;
+
+  min-height: 60px;
+  text-align: center;
 } header h1 {
-  font-size: 30px;
+  font-size: 24px;
   color: #55FFEE;
   font-family: 'Fira Code', 'Arial', monospace;
+  line-height: 1;
+} header h4 {
+  font-size: 10px;
+  color: #FFFF00;
+  font-family: 'Fira Code', 'Arial', monospace;
+  line-height: 0.2;
 }
 
 button:hover {
-  background: #EFEFFF;
+  background: #55DDDD;
   cursor: pointer;
 }
 
