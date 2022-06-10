@@ -4,15 +4,13 @@
 		<title>Hi!</title>
 		<link rel="stylesheet" href="main.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta content="cool website" property="og:title" />
+		<meta content="hi" property="og:description" />
+		<meta content="https://carpetmaker3162.github.io/" property="og:url" />
+		<meta content="https://imgur.com/a/zuGP9ia" property="og:image" />
+		<meta content="#F2B4C3" data-react-helmet="true" name="theme-color" />
 		<link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Fira+Code&display=swap" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script>
-			function lol(){
-				$.getJSON('https://ipapi.co/json/', function(data) {
-   					alert(`IP: ${data.ip}\nCountry: ${data.country_name}\nState/Province: ${data.region}\nTown/City: ${data.city}\nZip/Postal: ${data.postal}\nCoordinates: ${data.latitude}, ${data.longitude}`);
-				});
-			}
-		</script>
 	</head>
 
 <body>
@@ -28,5 +26,12 @@
 
 	<footer>
 	</footer>
+	<script>
+		function lol(){
+			$.getJSON('https://ipapi.co/json/', function(data) {
+				   alert(`IP: ${data.ip}\nCountry: ${data.country_name}\nState/Province: ${data.region}\nTown/City: ${data.city}\nZip/Postal: ${data.postal}\nCoordinates: ${data.latitude}, ${data.longitude}`);
+			});
+		}
+	</script>
 </body>
 </html>

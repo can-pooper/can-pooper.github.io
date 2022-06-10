@@ -3,12 +3,12 @@ body {
 }
 
 h2 {
-  color: #22CCCC;
+  color: #22DDDD;
   font-family: 'Fira Code', 'Arial', monospace;
 }
 
 h3 {
-  color: #22CCCC;
+  color: #22DDDD;
   font-family: 'Fira Code', 'Arial', monospace;
 }
 
@@ -18,7 +18,7 @@ p {
 }
 
 button {
-  background: #22CCCC;
+  background: #22DDDD;
   border-color: #FFFF00;
   font-family: 'Fira Code', 'Arial', monospace;
 }
@@ -44,7 +44,12 @@ header {
 }
 
 button:hover {
-  background: Ivory;
+  background: #EFEFFF;
+  cursor: pointer;
+}
+
+button:active {
+  background: #FFFF00;
 }
 
 .invis {
