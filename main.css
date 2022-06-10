@@ -5,12 +5,12 @@ body {
 }
 
 h1 {
-  color: navy;
+  color: #55FFEE;
   font-family: 'Fira Code', 'Arial', monospace;
 }
 
 h2 {
-  color: royalblue;
+  color: #22CCCC;
   font-family: 'Fira Code', 'Arial', monospace;
 }
 
@@ -19,7 +19,7 @@ p {
 }
 
 button {
-  background: DeepPink;
+  background: #22CCCC;
   border-color: Yellow; 
   font-family: 'Fira Code', 'Arial', monospace;
   display: inline;
