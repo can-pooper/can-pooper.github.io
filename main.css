@@ -14,24 +14,38 @@ h2 {
   font-family: 'Fira Code', 'Arial', monospace;
 }
 
+h3 {
+  color: #22CCCC;
+  font-family: 'Fira Code', 'Arial', monospace;
+}
+
 p {
   color: #DDDDDD;
   font-family: 'Fira Code', 'Arial', monospace;
+}
+
+#title {
+  font-size: 40;
+  color: #22CCCC;
 }
 
 button {
   background: #22CCCC;
   border-color: #FFFF00;
   font-family: 'Fira Code', 'Arial', monospace;
-  display: inline;
 }
 
 header {
   position: fixed;
   top: 0;
   left: 10;
-  padding: 12px;
-  margin: 0px;
+  padding: 10px;
+  margin: -12px;
+  border-width: 5px;
+  border-color: #FFFF00;
+  border-bottom-style: solid;
+  background: #222222;
+  width: 100%;
 }
 
 button:hover {
