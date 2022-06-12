@@ -25,17 +25,16 @@ p {
 
 button {
   background: #22FFFF;
-  border-color: #FFFF00;
+  border-color: #22FFFF;
   font-family: 'Fira Code', 'Arial', monospace;
-  animation: glow 1s ease-in-out infinite alternate none running;
 }
 
-@keyframes glow {
+@keyframes glow2 {
   from {
-    box-shadow: 0 0 15px -5px #22FFFF;
+    box-shadow: 0 0 15px -5px #FFFF00;
   }
   to {
-    box-shadow: 0 0 20px 0px #22FFFF;
+    box-shadow: 0 0 20px 0px #FFFF00;
   }
 }
 
@@ -53,13 +52,13 @@ header {
   border-bottom-style: solid;
   background: #252525;
   width: 100%;
-  box-shadow: 0px 0px 10px 0px #FFFF00;
 
   min-height: 60px;
   text-align: center;
+  animation: glow2 1.5s ease-in-out infinite alternate none running;
 } header h1 {
-  font-size: 24px;
-  color: #55FFEE;
+  font-size: 33px;
+  color: #FFFF00;
   font-family: 'Fira Code', 'Arial', monospace;
   line-height: 1;
 } header h4 {
@@ -76,6 +75,7 @@ button:hover {
 
 button:active {
   background: #FFFF00;
+  border-color: #FFFF00;
 }
 
 .invis {
