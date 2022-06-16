@@ -1,0 +1,79 @@
+html {
+  cursor: zoom-in;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Rainbow-gradient-fully-saturated.svg/800px-Rainbow-gradient-fully-saturated.svg.png');
+}
+
+body {
+  background-color: #FFFF00;
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 10;
+  
+  margin: -15px;
+  padding: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@keyframes going_right {
+  0% {
+    margin-left: -250px;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+
+@keyframes flash {
+  from {
+
+  }
+  to {
+    box-shadow: 0 0 8px 12px #FF00FF;
+  }
+}
+
+@keyframes rotate {
+  30% {transform: rotate(360deg);}
+}
+
+h1 {
+  font-size: 30px;
+  font-family: 'Times New Roman', 'Arial';
+  animation: flash 0.5s ease-in-out infinite alternate none running;
+}
+
+header {
+  background-color: aqua;
+} header h1 {
+  animation: going_right 5s ease-in-out infinite alternate none running;
+} header h4 {
+  animation: rotate 5s ease-in-out infinite alternate none running;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive
+}
+
+h3 {
+  font-size: 59px;
+  font-family: "Comic Sans MS", "Comic Sans", italic;
+}
+
+p {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+button {
+  background: #FF00FF;
+  font-family: "Comic Sans MS", "Comic Sans", monospace;
+  animation: flash 0.8s ease-in-out infinite alternate none running;
+}
+
+button:hover {
+  cursor: not-allowed;
+}
