@@ -1,9 +1,19 @@
+*, *:after, *:before {
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 html {
   position: relative;
 }
 
 body {
   background-color: #333333;
+  margin: 0;
 }
 
 h1 {
@@ -25,88 +35,68 @@ h3 {
 p {
   color: #DDDDDD;
   font-family: 'Ubuntu Mono', 'Arial', monospace;
-}
+} 
 
-
-/* header {
-  position: relative;
-  top: 0;
-  left: 10;
-  
-  margin: -8px;
-  padding: 1px;
-  padding-top: 12px;
-  padding-left: 15px;
-  padding-right: 0px;
-  
-  border-color: #FFFF00;
-  border-bottom-style: solid;
-  background: #252525;
-  width: 100%;
-  
-  min-height: 65px;
-  animation: glow2 1.3s ease-in-out infinite alternate none running;
-} header h1 {
-  font-size: 33px;
-  color: #FFFF00;
-  font-family: 'Fira Code', 'Arial', monospace;
-  line-height: 1;
-  display: inline;
-} header h4 {
-  font-size: 10px;
-  color: #FFFF00;
-  font-family: 'Fira Code', 'Arial', monospace;
-  line-height: 0.2;
-} header ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 60px;
-  float: right;
-  margin-right: 12px;
-} */
-
-header {
-  position: relative;
+header{
   overflow: hidden;
-  top: 0;
-  left: 0;
-  
-  border-color: #FFFF00;
-  border-bottom-style: solid;
-  background: #252525;
-  width: 100%;
   padding: 20px 10px;
-  
-  max-height: 65px;
+  margin-bottom: 25px;
+  border-color: #FFFF00;
+  font-family: 'Fira Code', 'Arial', monospace;
+  border-bottom-style: solid;
+  background-color: #252525;
+  width: 100%;
+  padding: 10px 10px;
+  max-height: 5%;
   animation: glow2 1.3s ease-in-out infinite alternate none running;
-} header h1 {
-  font-size: 33px;
+} header a {
+  width: 50%;
+  padding-left: 20px;
+  font-size: 36px;
   color: #FFFF00;
   font-family: 'Fira Code', 'Arial', monospace;
-  line-height: 1;
-  display: inline;
-} header h4 {
-  font-size: 10px;
+  text-decoration: none;
+  font-weight: bold;
+} header p {
+  display: inline-block;
+  margin-top: 10px;
+  padding-left: 10px;
+  font-size: 12px;
   color: #FFFF00;
   font-family: 'Fira Code', 'Arial', monospace;
-  line-height: 0.2;
-} header nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 60px;
+} header nav{
   float: right;
   padding-right: 20px;
-  display: inline;
+} header nav a {
+  position: relative;
+  font-weight: none;
+  top: 0;
+  float: left;
+  color: #FFFF00;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px; 
+  line-height: 25px;
+  border-radius: 5px;
+  transition: color 0.2s;
+} header a:hover{
+  color: #f6ff51;
+  text-decoration: none;
+}
+
+main{
+  padding-left: 30px;
+} main h1{
+  margin-bottom: 10px;
 }
 
 @keyframes glow2 {
   from {
-    box-shadow: 0 0 15px -5px #FFFF00;
+    box-shadow: 0 0 10px -5px #FFFF00;
   }
   to {
-    box-shadow: 0 0 25px 0px #FFFF00;
+    box-shadow: 0 0 20px 0px #FFFF00;
   }
 }
 
@@ -116,6 +106,7 @@ button {
   font-family: 'Ubuntu Mono', 'Arial', monospace;
   transition: all 0.2s ease-in-out;
   min-height: 35px;
+  padding: 10px;
 }
 
 button:hover {
