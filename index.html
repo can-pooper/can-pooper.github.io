@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
+		<meta charset = "utf-8" />
 		<title>Hi!</title>
 		<link rel="stylesheet" href="main.css">
 		<link rel="stylesheet alternate" href="main.css">
@@ -9,7 +10,6 @@
 		<meta content="hi" property="og:description" />
 		<meta content="https://carpetmaker3162.github.io/" property="og:url" />
 		<meta content="https://i.imgur.com/sQA4SHT.png" property="og:image" />
-		<meta content="#F2B4C3" data-react-helmet="true" name="theme-color" />
 		<link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Fira+Code&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -17,26 +17,23 @@
 
 <body>
 	<header>
-		<h1>carpetmaker3162</h1>
-		<h4>(at least, until i can think of a better name)</h4>
+		<a href="index.html">carpetmaker3162</a>
+		<p>(at least, until i can think of a better name)</p>
 		<nav>
-			<a href="contact.html">Contact</a>
 			<a href="contact.html">Contact</a>
 		</nav>
 	</header>
+	<main>
+		<h1>Welcome to my site!</h1>
 	
-	<h1>Welcome to my site!</h1>
+		<button type="button" onclick = "lol();" id = "bozo">
+			Get doxxed
+		</button>
 	
-	<button onclick = "lol();" id = "bozo">
-		Get doxxed
-	</button>
-
-	<button onclick = "beautiful();" id = "ratio">
-		Make this site beautiful
-	</button>
-
-	<footer>
-	</footer>
+		<button type="button" onclick = "beautiful();" id = "ratio">
+			Make this site beautiful
+		</button>
+	</main>
 	<script>
 		function lol(){
 			$.getJSON('https://ipapi.co/json/', function(data) {
