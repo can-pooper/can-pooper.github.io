@@ -26,15 +26,19 @@
 	<main>
 		<h1>Welcome to my site!</h1>
 	
-		<button type="button" onclick = "lol();" id = "bozo">
-			Get doxxed
+		<button type="button" onclick = "lol();">
+            Get doxxed
 		</button>
 	
 		<button type="button" onclick = "beautiful();" id = "ratio">
-			Make this site beautiful
+            Make this site beautiful
 		</button>
+    
+		<button type="button" onclick = "main();">
+            Say hello to the site
+		</button>
+
 	</main>
-    <script src="script.js"></script>
 	<script>
 		function lol(){
 			$.getJSON('https://ipapi.co/json/', function(data) {
@@ -67,6 +71,11 @@
 			document.getElementById("ratio").onclick = beautiful;
 			document.getElementById("ratio").innerHTML = "Make this site beautiful";
 		}
+        
+        function main() {
+            let name = prompt("What is your name?", "George");
+            alert(`FUCK YOU, ${name}!!!`);
+        }
 	</script>
 </body>
 </html>
