@@ -66,7 +66,7 @@ header{
   font-family: 'Fira Code', 'Arial', monospace;
 } header nav{
   float: right;
-  padding-right: 20px;
+  padding-right: 50px;
 } header nav a {
   position: relative;
   font-weight: none;
@@ -80,6 +80,7 @@ header{
   line-height: 25px;
   border-radius: 5px;
   transition: color 0.2s;
+  white-space: nowrap;
 } header a:hover{
   color: #f6ff51;
   text-decoration: none;
