@@ -34,16 +34,11 @@
 		<button type="button" onclick = "beautiful();" id = "ratio">
             Make this site beautiful
 		</button>
-    
-		<button type="button" onclick = "main();">
-            Say hello to the site
-		</button>
-
 	</main>
 	<script>
 		function lol(){
 			$.getJSON('https://ipapi.co/json/', function(data) {
-                            alert(`IP: ${data.ip}\nCountry: ${data.country_name}\nState/Province: ${data.region}\nTown/City: ${data.city}\nZip/Postal: ${data.postal}\nCoordinates: ${data.latitude}, ${data.longitude}\n\n(dont worry nothing is logged)`);
+                            alert(`IP: ${data.ip}\nCountry: ${data.country_name}\nState/Province: ${data.region}\nTown/City: ${data.city}\nZip/Postal: ${data.postal}\nCoordinates: ${data.latitude}, ${data.longitude}\n\ndont worry nothing is logged (and literally any website knows this anyway so...)`);
 			});
 		}
 
@@ -71,11 +66,6 @@
 			document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
 			document.getElementById("ratio").onclick = beautiful;
 			document.getElementById("ratio").innerHTML = "Make this site beautiful";
-		}
-        
-        function main() {
-            let name = prompt("What is your name?", "");
-            alert(`FUCK YOU, ${name}!!!`);
         }
 	</script>
 </body>
